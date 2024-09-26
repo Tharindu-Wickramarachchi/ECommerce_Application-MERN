@@ -1,6 +1,7 @@
 import Home from "./pages/Home";
 import Access from "./pages/AccessPage";
 import Register from "./pages/RegisterPage";
+import VerificationPage from "./pages/VerificationPage";
 import Login from "./pages/LoginPage";
 import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
 
@@ -23,6 +24,10 @@ function App() {
       {
         path: '/pages/login',
         element: <Login />
+      },
+      {
+        path: '/pages/VerificationPage',
+        element: <VerificationPage />
       },
       {
         path: '/pages/home',

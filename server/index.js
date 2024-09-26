@@ -24,19 +24,6 @@ app.post("/api/register", async (req, res) => {
   }
 });
 
-// app.post('/api/login', async (req,res) =>{
-//     const user = await User.findOne({
-//         email: req.body.email,
-//         password: req.body.password,
-//     })
-
-//     if (user){
-//         return res.json({status: 'ok', user: true})
-//     }else{
-//         return res.json({status: 'error', user: false})
-//     }
-// })
-
 app.post("/api/login", async (req, res) => {
   const user = await User.findOne({
     email: req.body.email,
